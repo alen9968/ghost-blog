@@ -1,13 +1,6 @@
 
 # Docker 架构介绍与实战
 
-#### 解决如下问题：
-docker的架构介绍和基本使用
-- 如何制作镜像？
-- 如何分享镜像？
-- 如何持久化容器的数据？
-- 如何编排一个多容器的应用？
-
 ## Mac下docker的安装
 从www.docker.com下载适合系统的dmg文件拖拽安装即可。
 
@@ -101,8 +94,8 @@ EXPOSE 80
 ```
 
 在当前目录下新建并运行：
-$docker build -t endlif/hello-nginx .
-$docker run -d -p 80:80 endlif/hello-nginx 
+$docker build -t  alen9968/hello-nginx .
+$docker run -d -p 80:80 alen9968/hello-nginx 
 
 
 测试：
@@ -169,13 +162,6 @@ https://www.tenxcloud.com
 
 https://cr.console.aliyun.com
 
-## docker的registry实战
-docker搜索，其结果按照STARS来排序
-
-$docker search whalesay
-$docker pull docker/whalesay
-$docker run docker/whalesay cowsay boo
-
 
 ## docker compose实战
 Dockerfile 可以让用户管理一个单独的应用容器；而 Compose 则允许用户在一个模板（YAML 格式）中定义一组相关联的应用容器（被称为一个 project，即项目），例如一个 Web 服务容器再加上后端的数据库服务容器等
@@ -216,7 +202,3 @@ ps 列出服务相关的容器
 
 后台管理页： http://localhost:80/ghost
 
-## 参考
-代码是慕课网“Docker入门” 课程的 实战代码，通过检验。
-
-课程地址：https://www.imooc.com/learn/867
